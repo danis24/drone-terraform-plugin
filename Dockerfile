@@ -12,3 +12,5 @@ RUN wget https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform
 	rm -rf /var/cache/apk/*
 
 RUN chmod +x /usr/local/bin/terraform
+
+RUN apk del wget unzip
