@@ -4,7 +4,7 @@ MAINTAINER Danis Yogaswara <danis@aniqma.com>
 
 ENV TERRAFORM_VERSION=0.11.4
 
-RUN apk --no-cache add wget ca-certificates bash openssl unzip
+RUN apk --no-cache add wget ca-certificates bash openssl unzip git
 
 ## Install Terraform in local
 RUN wget https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip && \
