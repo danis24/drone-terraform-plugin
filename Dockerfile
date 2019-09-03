@@ -2,7 +2,7 @@ FROM alpine:3.4
 
 MAINTAINER Danis Yogaswara <danis@aniqma.com>
 
-ENV TERRAFORM_VERSION=0.11.4
+ENV TERRAFORM_VERSION=0.11.14
 
 RUN apk --no-cache add wget ca-certificates bash openssl unzip git
 
